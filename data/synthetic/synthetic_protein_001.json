@@ -1,0 +1,44 @@
+{
+  "accession": "SYN-PROT-001",
+  "name": "ATPase-X",
+  "sequence": "MKTLLAAVAGKSTLLRQLAAGVEVVVVDSGDGTTNAAKLAEAGADVVVVATGPNVGKST",
+  "organism": "Synthetic benchmark organism",
+  "description": "Synthetic test protein for ProteinMind-X knowledge-construction evaluation.",
+  "functions": [
+    {
+      "function_type": "molecular_function",
+      "function_text": "ATP binding"
+    },
+    {
+      "function_type": "biological_process",
+      "function_text": "membrane transport"
+    }
+  ],
+  "domains": [
+    {
+      "domain_accession": "SYN-DOM-001",
+      "domain_name": "Synthetic ABC-type ATPase domain",
+      "start_position": 18,
+      "end_position": 58,
+      "source": "synthetic_benchmark"
+    }
+  ],
+  "structures": [
+    {
+      "structure_type": "synthetic",
+      "structure_accession": "SYN-STRUCT-001",
+      "source": "synthetic_benchmark",
+      "confidence": 1.0
+    }
+  ],
+  "evidence": [
+    {
+      "source_type": "synthetic_document",
+      "source_id": "synthetic_protein_001.json",
+      "claim": "ATPase-X is annotated with ATP binding and membrane transport functions.",
+      "evidence_text": "Synthetic benchmark annotation for controlled knowledge-construction testing.",
+      "confidence": 1.0,
+      "extraction_method": "synthetic_fixture"
+    }
+  ]
+}

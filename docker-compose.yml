@@ -1,0 +1,16 @@
+services:
+  postgres:
+    image: postgres:16
+    container_name: proteinmind-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: proteinmind
+      POSTGRES_PASSWORD: proteinmind_dev
+      POSTGRES_DB: proteinmind
+    ports:
+      - "5433:5432"
+    volumes:
+      - proteinmind_pgdata:/var/lib/postgresql/data
+
+volumes:
+  proteinmind_pgdata:
