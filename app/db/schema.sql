@@ -19,7 +19,7 @@ CREATE TABLE IF NOT EXISTS protein_functions (
     function_text TEXT NOT NULL,
     go_id TEXT,
     evidence_id UUID,
-    UNIQUE (protein_id, function_type, function_text, go_id)
+    UNIQUE NULLS NOT DISTINCT (protein_id, function_type, function_text, go_id)
 );
 
 CREATE TABLE IF NOT EXISTS protein_domains (
